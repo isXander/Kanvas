@@ -1,31 +1,36 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "kanvas",
   "version": "${version}",
-  "name": "The name of the mod",
-  "description": "Describe your mod here",
+  "name": "Kanvas",
+  "description": "FabricMC library to ease Kotlin development.",
   "authors": [
-    "Your name"
+    "isXander",
+    "Contributors"
   ],
   "contact": {
-    "homepage": "https://example.com",
-    "issues": "https://github.com/example/example/issues",
-    "sources": "https://github.com/example/example"
+    "homepage": "https://www.isxander.dev",
+    "issues": "https://github.com/isXander/Kanvas/issues",
+    "sources": "https://github.com/isXander/Kanvas"
   },
-  "license": "The Unlicense",
-  "icon": "assets/modid/icon.png",
+  "license": "CC BY-NC-SA 4.0",
   "environment": "*",
   "entrypoints": {
     "main": [
       {
         "adapter": "kotlin",
-        "value": "com.author.modid.ModName"
+        "value": "dev.isxander.kanvas.internal.KanvasMod"
       }
     ]
   },
-  "mixins": [
-    "modid.mixins.json"
-  ],
+  "custom": {
+    "modmenu": {
+      "links": {
+        "Discord": "https://short.isxander.dev/discord"
+      },
+      "badges": ["library"]
+    }
+  },
   "depends": {
     "fabric": "*",
     "fabricloader": ">=0.12.0",
